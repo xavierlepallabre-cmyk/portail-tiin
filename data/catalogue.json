@@ -1,0 +1,279 @@
+{
+  "version": "1.0.0",
+
+  "portail": {
+    "nom": "Portail TIIN",
+    "etablissement": "Lycée Alexis de Tocqueville, Cherbourg-en-Cotentin",
+    "formation": "Bac Pro TIIN",
+    "afficherExemples": true,
+    "qcm": { "url": null, "libelleBouton": "Ouvrir les QCM" }
+  },
+
+  "rubriques": [
+    {
+      "id": "applications",
+      "titre": "Applications",
+      "titreLong": "Applications interactives",
+      "description": "Des outils à manipuler pour comprendre les phénomènes et les installations.",
+      "vue": "applications",
+      "icone": "apps",
+      "couleur": "apps",
+      "menu": true
+    },
+    {
+      "id": "projets",
+      "titre": "Projets",
+      "titreLong": "Projets et réalisations d'élèves",
+      "description": "Rapports, diaporamas, posters et réalisations des promotions précédentes, pour trouver des idées.",
+      "vue": "galerie",
+      "icone": "projets",
+      "couleur": "projets",
+      "menu": true,
+      "filtres": ["anneeScolaire", "typeProjet", "thematique"]
+    },
+    {
+      "id": "ressources",
+      "titre": "Ressources",
+      "titreLong": "Cours et ressources",
+      "description": "Supports de cours, fiches de synthèse, documents et parcours, classés par discipline et par thème.",
+      "vue": "bibliotheque",
+      "icone": "ressources",
+      "couleur": "ressources",
+      "menu": true,
+      "filtres": ["discipline", "thematique", "niveau", "format"]
+    },
+    {
+      "id": "qcm",
+      "titre": "QCM",
+      "titreLong": "QCM et évaluations",
+      "description": "Questionnaires individuels sur tablette, associés aux séances de formation.",
+      "vue": "emplacement",
+      "icone": "qcm",
+      "couleur": "qcm",
+      "menu": true,
+      "statut": "en-preparation"
+    }
+  ],
+
+  "ressources": [
+    {
+      "id": "nuclea-tiin",
+      "rubrique": "applications",
+      "titre": "Nucléa TIIN",
+      "sousTitre": "Physique nucléaire",
+      "description": "Tableau périodique interactif, fiches isotopiques et formulaire de physique nucléaire avec calculs guidés et exercices.",
+      "url": "https://xavierlepallabre-cmyk.github.io/nuclea-tiin/",
+      "icone": "assets/img/apps/nuclea.svg",
+      "apparence": "nuclea",
+      "contenus": ["Tableau périodique", "Fiches isotopiques", "Formulaire", "Phénomènes animés", "Exercices guidés"],
+      "chiffres": [
+        { "valeur": "118", "libelle": "éléments" },
+        { "valeur": "3 385", "libelle": "fiches isotopiques" },
+        { "valeur": "6", "libelle": "rubriques de formules" }
+      ],
+      "motsCles": ["tableau périodique", "isotopes", "décroissance", "énergie de liaison", "formulaire"],
+      "discipline": "Physique nucléaire",
+      "statut": "publie"
+    },
+    {
+      "id": "surete-cycle-tiin",
+      "rubrique": "applications",
+      "titre": "Sûreté & Cycle TIIN",
+      "sousTitre": "Cycle du combustible et sûreté",
+      "description": "De la mine au stockage : parcours animés installation par installation, simulateur REP 1300 et retour d'expérience des accidents.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/",
+      "icone": "assets/img/apps/surete-cycle.svg",
+      "apparence": "surete",
+      "chiffres": [
+        { "valeur": "6", "libelle": "parcours" },
+        { "valeur": "50+", "libelle": "vues animées" }
+      ],
+      "raccourcis": [
+        { "titre": "Cycle amont", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#amont", "couleur": "#ffd43b" },
+        { "titre": "Simulateur REP 1300", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#rep", "couleur": "#ff9b4f" },
+        { "titre": "La Hague", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#hague", "couleur": "#f783ac" },
+        { "titre": "Andra", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#andra", "couleur": "#63e6be" },
+        { "titre": "Sûreté", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#surete", "couleur": "#b197fc" },
+        { "titre": "Accidents", "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#accidents", "couleur": "#ff6b6b" }
+      ],
+      "motsCles": ["cycle du combustible", "REP", "La Hague", "Andra", "sûreté", "accidents", "INES"],
+      "discipline": "Sciences et techniques nucléaires",
+      "statut": "publie"
+    },
+
+    {
+      "id": "exemple-rapport-maintenance",
+      "rubrique": "projets",
+      "exemple": true,
+      "titre": "Rapport de projet : remise en état d'une vanne manuelle",
+      "description": "Fiche d'exemple montrant comment un rapport de projet sera présenté : contexte, démarche, résultats et documents joints. Ce projet n'existe pas.",
+      "image": "assets/img/projets/exemple-rapport.svg",
+      "anneeScolaire": "2025-2026",
+      "typeProjet": "Rapport",
+      "thematique": "Maintenance",
+      "auteurs": "Exemple fictif",
+      "documents": [
+        { "titre": "Document de démonstration", "url": "documents/projets/exemple-document.pdf", "format": "pdf" }
+      ],
+      "motsCles": ["robinetterie", "démontage", "gamme"],
+      "statut": "publie"
+    },
+    {
+      "id": "exemple-poster-radioprotection",
+      "rubrique": "projets",
+      "exemple": true,
+      "titre": "Poster : les trois règles de la radioprotection",
+      "description": "Fiche d'exemple pour un poster réalisé en classe. Elle montre l'affichage d'une illustration en grand format et des documents associés. Ce projet n'existe pas.",
+      "image": "assets/img/projets/exemple-poster.svg",
+      "anneeScolaire": "2025-2026",
+      "typeProjet": "Poster",
+      "thematique": "Radioprotection",
+      "auteurs": "Exemple fictif",
+      "documents": [
+        { "titre": "Document de démonstration", "url": "documents/projets/exemple-document.pdf", "format": "pdf" }
+      ],
+      "motsCles": ["temps", "distance", "écran"],
+      "statut": "publie"
+    },
+    {
+      "id": "exemple-diaporama-cycle",
+      "rubrique": "projets",
+      "exemple": true,
+      "titre": "Diaporama : visite virtuelle d'une installation du cycle",
+      "description": "Fiche d'exemple pour une présentation orale. Elle montre comment un diaporama et ses notes seront proposés en consultation. Ce projet n'existe pas.",
+      "image": "assets/img/projets/exemple-diaporama.svg",
+      "anneeScolaire": "2024-2025",
+      "typeProjet": "Diaporama",
+      "thematique": "Cycle du combustible",
+      "auteurs": "Exemple fictif",
+      "documents": [],
+      "motsCles": ["présentation", "oral"],
+      "statut": "publie"
+    },
+    {
+      "id": "exemple-realisation-maquette",
+      "rubrique": "projets",
+      "exemple": true,
+      "titre": "Réalisation : maquette d'un circuit de refroidissement",
+      "description": "Fiche d'exemple pour une réalisation pratique documentée par des photographies. Ce projet n'existe pas.",
+      "image": "assets/img/projets/exemple-maquette.svg",
+      "anneeScolaire": "2024-2025",
+      "typeProjet": "Réalisation",
+      "thematique": "Thermohydraulique",
+      "auteurs": "Exemple fictif",
+      "documents": [],
+      "motsCles": ["maquette", "pompe", "échangeur"],
+      "statut": "publie"
+    },
+
+    {
+      "id": "parcours-cycle-amont",
+      "rubrique": "ressources",
+      "titre": "Parcours : le cycle amont",
+      "description": "Mines, conversion, enrichissement, fabrication des pastilles et des assemblages.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#amont",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Cycle du combustible",
+      "niveau": "Tous niveaux",
+      "format": "Parcours interactif",
+      "motsCles": ["uranium", "enrichissement", "UF6"],
+      "statut": "publie"
+    },
+    {
+      "id": "parcours-rep-1300",
+      "rubrique": "ressources",
+      "titre": "Simulateur REP 1300 MWe",
+      "description": "Circuits primaire et secondaire, pressuriseur, cycle thermodynamique, scénarios de défauts.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#rep",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Réacteur",
+      "niveau": "Tous niveaux",
+      "format": "Simulateur",
+      "motsCles": ["REP", "circuit primaire", "pressuriseur", "GV"],
+      "statut": "publie"
+    },
+    {
+      "id": "parcours-la-hague",
+      "rubrique": "ressources",
+      "titre": "Parcours : La Hague",
+      "description": "Traitement du combustible usé, de la réception à la vitrification.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#hague",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Cycle du combustible",
+      "niveau": "Tous niveaux",
+      "format": "Parcours interactif",
+      "motsCles": ["traitement", "dissolution", "vitrification"],
+      "statut": "publie"
+    },
+    {
+      "id": "parcours-andra",
+      "rubrique": "ressources",
+      "titre": "Parcours : gestion des déchets (Andra)",
+      "description": "Classement des déchets, colis, centres de stockage, Cigéo.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#andra",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Déchets radioactifs",
+      "niveau": "Tous niveaux",
+      "format": "Parcours interactif",
+      "motsCles": ["déchets", "Cigéo", "colis"],
+      "statut": "publie"
+    },
+    {
+      "id": "parcours-surete",
+      "rubrique": "ressources",
+      "titre": "Parcours : sûreté nucléaire",
+      "description": "Acteurs, trois fonctions, trois barrières, défense en profondeur, zonages, PUI et PPI.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#surete",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Sûreté",
+      "niveau": "Tous niveaux",
+      "format": "Parcours interactif",
+      "motsCles": ["barrières", "défense en profondeur", "RGE"],
+      "statut": "publie"
+    },
+    {
+      "id": "parcours-accidents",
+      "rubrique": "ressources",
+      "titre": "Parcours : accidents nucléaires",
+      "description": "Échelle INES, Three Mile Island, Tchernobyl, Fukushima, le Blayais, retour d'expérience.",
+      "url": "https://xavierlepallabre-cmyk.github.io/Surete-cycle-tiin/#accidents",
+      "discipline": "Sciences et techniques nucléaires",
+      "thematique": "Sûreté",
+      "niveau": "Tous niveaux",
+      "format": "Parcours interactif",
+      "motsCles": ["INES", "REX", "Fukushima"],
+      "statut": "publie"
+    },
+    {
+      "id": "outil-nuclea",
+      "rubrique": "ressources",
+      "titre": "Formulaire et calculs de physique nucléaire",
+      "description": "Décroissance radioactive, énergie de liaison et calculs guidés, dans Nucléa TIIN.",
+      "url": "https://xavierlepallabre-cmyk.github.io/nuclea-tiin/",
+      "discipline": "Physique nucléaire",
+      "thematique": "Radioactivité",
+      "niveau": "Tous niveaux",
+      "format": "Outil de calcul",
+      "motsCles": ["période", "activité", "formulaire"],
+      "statut": "publie"
+    },
+
+    {
+      "id": "qcm-seances",
+      "rubrique": "qcm",
+      "titre": "QCM de séance sur tablette",
+      "description": "Chaque apprenti répond sur sa tablette au questionnaire associé à la séance. L'enseignant consulte les résultats sur un tableau de bord séparé, protégé par une authentification.",
+      "statut": "en-preparation"
+    }
+  ],
+
+  "feuilleDeRoute": [
+    { "titre": "Nucléa TIIN : tableau périodique, isotopes, formulaire", "statut": "disponible" },
+    { "titre": "Sûreté & Cycle TIIN : six parcours et simulateur REP 1300", "statut": "disponible" },
+    { "titre": "Portail installable sur tablette Android", "statut": "disponible" },
+    { "titre": "Galerie des projets d'élèves (en attente des premiers documents autorisés)", "statut": "disponible" },
+    { "titre": "Bibliothèque de cours et fiches de synthèse en PDF", "statut": "en-preparation" },
+    { "titre": "QCM de séance avec tableau de bord enseignant", "statut": "en-preparation" },
+    { "titre": "Nouveaux simulateurs et parcours (radioprotection, interventions)", "statut": "envisage" }
+  ]
+}

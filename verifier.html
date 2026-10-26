@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vérifier le catalogue — Portail TIIN</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+<link rel="stylesheet" href="assets/css/portail.css">
+<script src="assets/js/theme.js"></script>
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:32px var(--gutter) 64px}
+  .checks{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+  .checks li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:12px 14px;border-radius:var(--r-sm);background:var(--surface);border:1px solid var(--line);font-size:var(--t-sm)}
+  .checks li b{font-weight:600}
+  .k-ok::before{content:"✓";color:var(--ok);font-weight:700}
+  .k-warn::before{content:"!";color:var(--wait);font-weight:700}
+  .k-err::before{content:"✗";color:#C0392B;font-weight:700}
+  .summary{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="pagehead" style="--c:var(--orange)"><span class="rod" aria-hidden="true"></span>
+    <h1>Vérifier le catalogue</h1>
+    <p>Cette page relit <code>data/catalogue.json</code> et signale les oublis avant publication. Elle ne modifie rien.</p>
+  </header>
+  <div class="summary" id="summary" role="status">Vérification en cours…</div>
+  <ul class="checks" id="checks"></ul>
+  <p style="margin-top:28px"><a class="btn btn-quiet" href="./">Revenir au portail</a></p>
+</div>
+<script src="assets/js/verifier.js"></script>
+</body>
+</html>
