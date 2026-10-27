@@ -195,6 +195,20 @@ Documentation complémentaire dans `docs/` :
 
 Conception originale : Xavier Le Pallabre  
 Ressource pédagogique développée à titre personnel, avec l’assistance d’outils d’intelligence artificielle.  
-© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable.
+© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable : [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr).
 
 Cette mention concerne le portail lui-même (code, mise en page, textes de présentation). Les travaux d'apprentis publiés dans `documents/` restent ceux de leurs auteurs, diffusés selon leur autorisation (voir `docs/CONFIDENTIALITE-ET-DROITS.md`).
+
+## Licence
+
+Sauf mention contraire, le contenu de ce dépôt (code, textes, schémas, illustrations) est mis à disposition selon les termes de la licence **Creative Commons Attribution – Pas d'utilisation commerciale – Partage dans les mêmes conditions 4.0 International** ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)). Texte complet : fichier `LICENSE`.
+
+Tu peux le réutiliser, le copier et l'adapter, à trois conditions :
+- **Attribution** : citer l'auteur original (Xavier Le Pallabre), indiquer la licence et signaler les modifications ;
+- **Pas d'utilisation commerciale** : pas de vente ni d'usage dans un service payant ;
+- **Partage dans les mêmes conditions** : diffuser les adaptations sous la même licence.
+
+Ne sont pas couverts par cette licence :
+- la police Lexend (`assets/fonts/`), sous licence SIL Open Font License 1.1 (voir `assets/fonts/OFL.txt`) ;
+- les logos du lycée Alexis de Tocqueville et du Bac Pro TIIN, propriété de l'établissement ;
+- les travaux d'apprentis publiés dans `documents/` et leurs images, qui restent ceux de leurs auteurs et ne sont diffusés que selon leur autorisation (voir `docs/CONFIDENTIALITE-ET-DROITS.md`).

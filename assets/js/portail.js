@@ -232,7 +232,7 @@
     html += '<footer class="homefoot">' +
       '<span>Aucun compte, aucune donnée personnelle collectée.</span>' +
       '<a href="#/dispositif">' + icon('info', 'ic-sm') + 'Le dispositif TIIN sur tablette</a>' +
-      '<p class="credit">Conception originale : Xavier Le Pallabre<br>Ressource pédagogique développée à titre personnel, avec l’assistance d’outils d’intelligence artificielle.<br>© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable.</p>' +
+      '<p class="credit">Conception originale : Xavier Le Pallabre<br>Ressource pédagogique développée à titre personnel, avec l’assistance d’outils d’intelligence artificielle.<br>© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable. Licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>.</p>' +
     '</footer>';
     return html;
   }
