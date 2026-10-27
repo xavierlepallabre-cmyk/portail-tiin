@@ -190,3 +190,11 @@ Documentation complémentaire dans `docs/` :
 - `INSTALLATION-TABLETTE.md` — installer le portail sur la Samsung Galaxy ;
 - `VERIFICATION-PRESENTATION.md` — check-list et déroulé de la démonstration à la direction ;
 - `CONFIDENTIALITE-ET-DROITS.md` — publication des travaux d'élèves, modèle d'autorisation.
+
+## Auteur et droits
+
+Conception originale : Xavier Le Pallabre  
+Ressource pédagogique développée à titre personnel, avec l’assistance d’outils d’intelligence artificielle.  
+© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable.
+
+Cette mention concerne le portail lui-même (code, mise en page, textes de présentation). Les travaux d'apprentis publiés dans `documents/` restent ceux de leurs auteurs, diffusés selon leur autorisation (voir `docs/CONFIDENTIALITE-ET-DROITS.md`).

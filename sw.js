@@ -7,7 +7,7 @@
 
    À chaque publication d'une nouvelle version, augmenter VERSION.
    ========================================================================== */
-const VERSION = 'portail-tiin-v1.0.0';
+const VERSION = 'portail-tiin-v1.0.1';
 const SCOPE = self.registration.scope;
 
 const SHELL = [
