@@ -12,7 +12,7 @@
 :root{
   color-scheme:light;
   /* Base */
-  --bg:#EEF2F7;
+  --bg:#F4F6FA;
   --surface:#FFFFFF;
   --surface-2:#E5EBF3;
   --line:#D3DBE7;
@@ -59,8 +59,8 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     color-scheme:dark;
-    --bg:#0A1226; --surface:#111C38; --surface-2:#18264A; --line:#24365F; --line-strong:#33497A;
-    --ink:#EAF0FA; --muted:#A8B6D2; --faint:#8494B3;
+    --bg:#0A1430; --surface:#12204A; --surface-2:#1A2C5C; --line:#2B3F72; --line-strong:#35508A;
+    --ink:#EEF2FA; --muted:#A9B6D3; --faint:#8494B3;
     --brand:#3D67C9; --brand-ink:#9DB8F5; --brand-hover:#4E78DA;
     --orange:#F59C6B; --orange-ink:#F7AE85; --orange-soft:#3A2418;
     --c-apps:#8FADF2; --c-projets:#F29A66; --c-ressources:#5FC4A6; --c-qcm:#AE9CF0; --c-neutre:#8494B3;
@@ -72,8 +72,8 @@
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#0A1226; --surface:#111C38; --surface-2:#18264A; --line:#24365F; --line-strong:#33497A;
-  --ink:#EAF0FA; --muted:#A8B6D2; --faint:#8494B3;
+  --bg:#0A1430; --surface:#12204A; --surface-2:#1A2C5C; --line:#2B3F72; --line-strong:#35508A;
+  --ink:#EEF2FA; --muted:#A9B6D3; --faint:#8494B3;
   --brand:#3D67C9; --brand-ink:#9DB8F5; --brand-hover:#4E78DA;
   --orange:#F59C6B; --orange-ink:#F7AE85; --orange-soft:#3A2418;
   --c-apps:#8FADF2; --c-projets:#F29A66; --c-ressources:#5FC4A6; --c-qcm:#AE9CF0; --c-neutre:#8494B3;
@@ -116,18 +116,18 @@ button{font:inherit;color:inherit}
   height:calc(var(--topbar-h) + env(safe-area-inset-top));
   padding:env(safe-area-inset-top) max(var(--gutter),env(safe-area-inset-right)) 0 max(var(--gutter),env(safe-area-inset-left));
   display:flex;align-items:center;justify-content:space-between;gap:16px;
-  background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
-  border-bottom:1px solid transparent;transition:border-color .2s;
+  background:var(--surface);
+  border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--orange) 0 34%,#1A3C89 34% 100%) 1;
 }
-.topbar.is-scrolled{border-bottom-color:var(--line)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-height:48px;border-radius:var(--r-sm)}
-.brand-mark{width:40px;height:40px;border-radius:11px;background:var(--brand);display:grid;place-items:center}
-.brand-mark svg{width:32px;height:32px}
-.brand-mark .bars rect{fill:#F18A52}
-.brand-text{display:flex;flex-direction:column;line-height:1.15}
-.brand-text strong{font-size:var(--t-md);font-weight:600}
-.brand-text span{font-size:var(--t-xs);color:var(--muted)}
+.school-logo{display:block;background:#fff;border-radius:8px;padding:3px 6px;flex-shrink:0;border:1px solid var(--line);line-height:0}
+.school-logo img{height:44px;width:auto;display:block}
+.brand-sep{width:1px;height:32px;background:var(--line)}
+.brand-text{display:flex;flex-direction:column;line-height:1.12;min-width:0}
+.brand-text .eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-text strong{font-size:21px;font-weight:700;letter-spacing:-.03em;color:var(--brand-ink);white-space:nowrap}
+.brand-text strong span{color:var(--orange-ink)}
+@media (max-width:420px){.brand-sep{display:none}.school-logo img{height:38px}.brand-text strong{font-size:18px}.brand-text .eyebrow{font-size:8.5px;letter-spacing:.06em}}
 .topbar-actions{display:flex;align-items:center;gap:6px}
 .iconbtn{
   width:48px;height:48px;border-radius:var(--r-pill);border:0;background:transparent;color:var(--muted);
@@ -303,18 +303,24 @@ button{font:inherit;color:inherit}
 .appcard.is-nuclea .open{background:#1A3C89;color:#fff}
 .appcard.is-nuclea .figures b{color:#1A3C89}
 .appcard.is-nuclea:hover .open{background:#24499E}
-/* Apparence Sûreté & Cycle : sombre, code couleur du cycle */
-.appcard.is-surete{background:#0d1b2e;color:#e8f0f7;border:1px solid #22364b}
-:root[data-theme="dark"] .appcard.is-surete{border-color:#2d4660}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .appcard.is-surete{border-color:#2d4660}}
+/* Apparence Sûreté & Cycle : bleu nuit de la charte, code couleur du cycle sur les raccourcis */
+.appcard.is-surete{background:#12204A;color:#EEF2FA;border:1px solid #2B3F72}
 .appcard.is-surete::before{
   content:"";position:absolute;right:-60px;top:-60px;width:250px;height:250px;z-index:-1;opacity:.85;
   background:url(../img/apps/cycle.svg) center/contain no-repeat;
 }
-.appcard.is-surete .open{background:#e8f0f7;color:#0d1b2e}
-.appcard.is-surete .figures b{color:#8fd3ff}
-.appcard.is-surete .shortcuts a{background:#152335;color:#e8f0f7}
-.appcard.is-surete .shortcuts a:hover{background:#1d4766}
+.appcard.is-surete .open{background:#FFFFFF;color:#1A3C89}
+.appcard.is-surete .figures b{color:#F6A06E}
+.appcard.is-surete .shortcuts a{background:#1A2C5C;color:#EEF2FA}
+.appcard.is-surete .shortcuts a:hover{background:#24396F}
+/* Apparence Élec : comme Nucléa, sans décor */
+.appcard.is-elec{background:#FFFFFF;color:#0E1B36;border:1px solid #D5DDEA}
+.appcard.is-elec .open{background:#1A3C89;color:#fff}
+.appcard.is-elec:hover .open{background:#24499E}
+.appcard.is-elec .figures b{color:#1A3C89}
+.appcard.is-elec .contents li{color:#1A3C89;border-color:#C9D5EA;opacity:1;background:#F4F6FA}
+.appcard.is-elec .shortcuts a{background:#F4F6FA;color:#1A3C89}
+.appcard.is-elec .shortcuts a:hover{background:#E5EBF3}
 /* Apparence générique pour les futures applications */
 .appcard.is-defaut{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .appcard.is-defaut .open{background:var(--brand);color:var(--on-brand)}
@@ -340,6 +346,10 @@ button{font:inherit;color:inherit}
 .tile .status{grid-column:2;justify-self:start;margin-top:6px}
 
 .homefoot{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:var(--t-sm)}
+/* Logos du lycée et du Bac Pro TIIN, même bloc dans toutes les applications TIIN */
+.tiin-logos{flex-basis:100%;display:flex;gap:10px;flex-wrap:wrap}
+.tiin-logos .logo-plate{display:inline-grid;place-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 10px;line-height:0}
+.tiin-logos img{height:40px;width:auto;display:block}
 .homefoot .credit{flex-basis:100%;margin:0;line-height:1.5;font-size:12px}
 .homefoot a{font-weight:500;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;gap:8px}
 
@@ -494,7 +504,7 @@ button{font:inherit;color:inherit}
   .appcard-main{padding:22px 20px 14px}
   .appcard-icon{width:60px;height:60px;border-radius:15px}
   .appcard-foot,.shortcuts{padding-left:20px;padding-right:20px}
-  .brand-text span{display:none}
+  .brand-text .eyebrow{display:block}
   .chiprow-label{min-width:0}
   .row .fmt{display:none}
   .row{padding:14px 14px}
@@ -515,3 +525,4 @@ button{font:inherit;color:inherit}
 .updatebar .sheet-actions{margin:0}
 .updatebar .btn{min-height:44px;background:var(--orange);color:#0E1B36}
 @media (min-width:1000px) and (orientation:landscape), (min-width:1200px){.updatebar{bottom:24px}}
+.appcard.is-surete .appcard-icon{box-shadow:0 0 0 1.5px rgba(255,255,255,.35),0 4px 14px rgba(0,0,0,.25)}
