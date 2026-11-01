@@ -1,13 +1,13 @@
 /* ==========================================================================
    Portail TIIN — service worker
    Rôle : ouvrir le portail rapidement et sans réseau.
-   Il ne gère QUE les fichiers du portail (son dossier). Nucléa TIIN et
-   Sûreté & Cycle TIIN ont leurs propres service workers : celui-ci ne les
+   Il ne gère QUE les fichiers du portail (son dossier). Nucléa TIIN,
+   Élec TIIN et Sûreté & Cycle TIIN ont leurs propres service workers : celui-ci ne les
    touche pas et ne garantit pas leur fonctionnement hors connexion.
 
    À chaque publication d'une nouvelle version, augmenter VERSION.
    ========================================================================== */
-const VERSION = 'portail-tiin-v1.0.2';
+const VERSION = 'portail-tiin-v1.1.0';
 const SCOPE = self.registration.scope;
 
 const SHELL = [
@@ -22,6 +22,9 @@ const SHELL = [
   'assets/fonts/lexend-600.ttf',
   'assets/fonts/lexend-700.ttf',
   'assets/img/logo-bac-pro-tiin.png',
+  'assets/img/logo-bac-pro-tiin.svg',
+  'assets/img/logo-tocqueville.png',
+  'assets/img/apps/elec.svg',
   'assets/img/apps/nuclea.svg',
   'assets/img/apps/surete-cycle.svg',
   'assets/img/apps/orbites.svg',

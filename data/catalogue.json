@@ -76,6 +76,31 @@
       "statut": "publie"
     },
     {
+      "id": "elec-tiin",
+      "rubrique": "applications",
+      "titre": "Élec TIIN",
+      "sousTitre": "Schémas électriques",
+      "description": "Simulateurs de schémas de commande et de puissance, défis de câblage, dépannage, consignation et imagier des symboles normalisés.",
+      "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/",
+      "icone": "assets/img/apps/elec.svg",
+      "apparence": "elec",
+      "chiffres": [
+        { "valeur": "3", "libelle": "simulateurs" },
+        { "valeur": "6", "libelle": "rubriques" }
+      ],
+      "raccourcis": [
+        { "titre": "Atelier", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/atelier", "couleur": "#1A3C89" },
+        { "titre": "Fluidique", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/fluidique", "couleur": "#1A3C89" },
+        { "titre": "Défis", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/defis", "couleur": "#F18A52" },
+        { "titre": "Dépannage", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/depannage", "couleur": "#F18A52" },
+        { "titre": "Sécurité", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/consignation", "couleur": "#1E7A4F" },
+        { "titre": "Symboles", "url": "https://xavierlepallabre-cmyk.github.io/elec-tiin/#/symboles", "couleur": "#4A5A75" }
+      ],
+      "motsCles": ["schéma électrique", "démarrage moteur", "étoile-triangle", "consignation", "habilitation", "symboles", "pneumatique"],
+      "discipline": "Électrotechnique",
+      "statut": "publie"
+    },
+    {
       "id": "surete-cycle-tiin",
       "rubrique": "applications",
       "titre": "Sûreté & Cycle TIIN",

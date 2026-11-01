@@ -230,6 +230,7 @@
     }
 
     html += '<footer class="homefoot">' +
+      '<div class="tiin-logos"><span class="logo-plate"><img src="assets/img/logo-tocqueville.png" alt="Lycée Alexis de Tocqueville — Métiers de l’industrie et du nucléaire" width="541" height="465" loading="lazy"></span><span class="logo-plate"><img src="assets/img/logo-bac-pro-tiin.svg" alt="Bac Pro TIIN — Techniques d’interventions sur installations nucléaires" width="412" height="133" loading="lazy"></span></div>' +
       '<span>Aucun compte, aucune donnée personnelle collectée.</span>' +
       '<a href="#/dispositif">' + icon('info', 'ic-sm') + 'Le dispositif TIIN sur tablette</a>' +
       '<p class="credit">Conception originale : Xavier Le Pallabre<br>Ressource pédagogique développée à titre personnel, avec l’assistance d’outils d’intelligence artificielle.<br>© 2026 Xavier Le Pallabre — Attribution de l’auteur original à conserver lors des réutilisations et adaptations, conformément à la licence applicable. Licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>.</p>' +
@@ -239,7 +240,7 @@
 
   function appCard(it) {
     var url = safeUrl(it.url);
-    var look = ['nuclea', 'surete'].indexOf(it.apparence) >= 0 ? it.apparence : 'defaut';
+    var look = ['nuclea', 'surete', 'elec'].indexOf(it.apparence) >= 0 ? it.apparence : 'defaut';
     var figs = (it.chiffres || []).map(function (c) {
       return '<li><b>' + esc(c.valeur) + '</b><span>' + esc(c.libelle) + '</span></li>';
     }).join('');

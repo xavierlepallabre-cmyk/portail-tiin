@@ -39,7 +39,7 @@ Règle simple : **pour ajouter du contenu, on touche à `data/catalogue.json` et
 
 ## 2. Publier sur GitHub Pages (gratuit)
 
-Le portail vit dans son **propre dépôt**, à côté de `nuclea-tiin` et `Surete-cycle-tiin`, sans les toucher.
+Le portail vit dans son **propre dépôt**, à côté de `nuclea-tiin`, `elec-tiin` et `Surete-cycle-tiin`, sans les toucher.
 
 1. Sur github.com, connecté à ton compte `xavierlepallabre-cmyk` : bouton **New** (nouveau dépôt).
 2. Nom du dépôt : `portail-tiin`. Visibilité : **Public** (obligatoire pour GitHub Pages gratuit). Créer.
